@@ -1,0 +1,48 @@
+.clientes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+
+    .cliente-info {
+      padding: 0;
+      background-color: #000000;
+      color: antiquewhite;
+      font-weight: bold;
+    
+       img {
+        max-width: 100%;
+        height: 200px;
+        max-height: 200px;
+        object-fit: cover;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 682px) {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      width:100%;
+      margin-bottom: 20px;
+
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

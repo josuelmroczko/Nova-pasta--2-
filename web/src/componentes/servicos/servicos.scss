@@ -1,0 +1,104 @@
+.containerclente {
+    position: relative;
+    padding-top: 100px; /* Ajustado para 100px */
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    height: 500px;
+}
+
+.containerclente h2,
+.containerclente p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centralizar verticalmente */
+    padding-top: 50px; /* Ajustado para 50px */
+}
+
+.clientes ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.clientes ul li {
+    margin: 10px;
+}
+
+.clientes ul li img {
+    max-width: 200px;
+    height: auto;
+}
+
+.servios {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 150px 20px; /* Ajustado para 50px de padding-top */
+    color: rgb(206, 206, 206);
+    font-size: 1.5vw;
+}
+
+.servios h2 {
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.servios img {
+    width: 100%; /* Ajustado para ocupar toda a largura */
+    max-width: 600px; /* Limitado a 600px */
+    height: auto;
+    object-fit: cover;
+}
+
+.servicosPrestados {
+    position: relative;
+    top: 100px;
+    line-height: 40px;
+}
+
+.servicosPrestados li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.servicosPrestados span {
+    color: rgba(156, 166, 167, 0.644);
+}
+
+/* Media query para telas menores */
+@media only screen and (max-width: 768px) {
+    .containerclente {
+        height: 100%;
+        padding-top: 50px; /* Ajustado para 50px */
+    }
+
+    .clientes {
+        flex-direction: column; /* Alterado para coluna em telas menores */
+        align-items: center; /* Centralizar horizontalmente */
+        padding-top: 10px; /* Removido o padding-top */
+    }
+
+    .servios {
+        padding-top: 50px; /* Ajustado para 50px */
+        font-size: 3.5vw;
+    }
+
+    .servicosPrestados {
+        top: 50px; /* Ajustado para 50px */
+    }
+    ul{
+     
+
+    }
+}
